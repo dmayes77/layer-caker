@@ -24,7 +24,13 @@ export function Post(props: NonNullable<POST_QUERYResult>) {
       {mainImage ? (
         <figure className="lg:col-span-4 flex flex-col gap-2 items-start">
           <Image
-            src={urlFor(mainImage).quality(80).width(800).height(300).auto("format").url()}
+            className="object-cover"
+            src={urlFor(mainImage)
+              .quality(80)
+              .width(800)
+              .height(300)
+              .auto("format")
+              .url()}
             width={800}
             height={300}
             alt=""

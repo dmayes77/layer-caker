@@ -23,7 +23,7 @@ export const components: PortableTextComponents = {
       // 3) Render with numeric width/height
       return (
         <Image
-          className="rounded-lg not-prose w-full h-auto"
+          className="rounded-lg not-prose w-full h-auto object-cover"
           src={imgUrl}
           alt={value.alt || ""}
           width={600}

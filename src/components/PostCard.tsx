@@ -28,6 +28,7 @@ export function PostCard(props: POSTS_QUERYResult[0]) {
         <div className="md:col-start-9 md:col-span-4 rounded-lg overflow-hidden flex">
           {mainImage ? (
             <Image
+              className="object-cover"
               src={urlFor(mainImage).width(400).height(200).url()}
               width={400}
               height={200}
